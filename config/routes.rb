@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
-  get 'materias/lenguajes'
+  get 'materias/lenguajes', :as => :lenguajes
 
-  get 'materias/discretas'
+  get 'materias/discretas', :as => :discretas
 
-  get 'materias/icc'
+  get 'materias/icc', :as => :icc
 
   get 'welcome/index'
 
@@ -13,6 +13,7 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
   root 'welcome#index'
+  
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
