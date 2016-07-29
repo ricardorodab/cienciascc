@@ -22,5 +22,6 @@ module Cienciascc
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
+    #config.secret_key_base = "0db81fd399b668fd728d79ff30befe845c5fd2a54a5fabea15e85411b826d56165de2fe8349699b3c4703602c818459c8e88452a2c2eae5a98d1011ab23786ca"
   end
 end
