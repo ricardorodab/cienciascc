@@ -1,2 +1,22 @@
-<h1>Welcome#index</h1>
-<p>Find me in app/views/welcome/index.html.erb</p>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Ciencias CC</title>
+    <meta name="description" content="Pagina de apoyo para subir materiales y anuncios a los alumnos de la carrera de Ciencias de la computación de la Facultad de Ciencias UNAM"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <%= stylesheet_link_tag "estilos.css" %>
+    <%= favicon_link_tag 'favicon2.ico' %>
+    <%= stylesheet_link_tag"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" %>
+  </head>
+  <body>
+    <header id="index">      
+      <h1>Ciencias CC</h1>
+      <%= link_to "Lenguajes de Programación", root_path, class: "orangeBtn" %>
+      <%= link_to "Estructuras Discretas", root_path, class: "orangeBtn" %>
+      <%= link_to "Introducción a la ciencia de la computación", root_path, class: "orangeBtn" %>      
+    </header>
+     <%= javascript_include_tag "http://code.jquery.com/jquery-1.10.1.min.js" %>
+    <%= javascript_include_tag"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"%>
+  </body>
+</html>
